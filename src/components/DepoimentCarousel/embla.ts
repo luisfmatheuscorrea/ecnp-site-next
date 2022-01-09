@@ -1,199 +1,11 @@
 import styled from "styled-components";
 import { colors } from "../../assets/styles/global";
 
-// export const SliderDiv = styled.div`
-//   position: relative;
-//   /* padding: 0 1.2rem; */
-//   width: 100%;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: center;
-
-//   .embla__viewport {
-//     overflow: hidden;
-//     /* overflow: visible; */
-//     width: 40.625rem;
-//     /* width: 30%; */
-//   }
-
-//   .embla__container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 21.875rem;
-//     user-select: none;
-//     -webkit-touch-callout: none;
-//     -khtml-user-select: none;
-//     -webkit-tap-highlight-color: transparent;
-//   }
-
-//   @media (max-width: 436px) {
-//     max-width: 38rem;
-//     padding: 20px;
-
-//     .embla__viewport {
-//       overflow: visible;
-//       width: 30rem;
-//       /* width: 30%; */
-//     }
-
-//     .embla__container {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       height: 21.875rem;
-//       user-select: none;
-//       -webkit-touch-callout: none;
-//       -khtml-user-select: none;
-//       -webkit-tap-highlight-color: transparent;
-//     }
-//   }
-// `
-
-// interface EmblaSlideProps {
-//   selected: boolean,
-// }
-
-// export const EmblaSlide = styled.div<EmblaSlideProps>`
-//   position: relative;
-//   padding-left: 0.625rem;
-//   min-width: ${props => props.selected ? '40.625rem' : '12.5rem'};
-//   width: ${props => props.selected ? '40.625rem' : '12.5rem'};
-//   padding: 0 0 4rem 0;
-
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: flex-start;
-  
-//   .text-box {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     width: 83%;
-//     margin-left: 1.5rem;
-//   }
-
-//   img {
-//     width: 7.563rem;
-//     height: 7.563rem;
-//     border-radius: 50%;
-//   }
-  
-//   .embla__slide__inner {
-//     position: relative;
-//     overflow: hidden;
-//     border-radius: 0.625rem;
-//     margin: 0 2rem;
-//     width: ${props => props.selected ? '40.625rem' : '12.5rem'};
-//     height: ${props => props.selected ? '20rem' : '14.25rem'};
-//     padding: 0 1rem;
-//     box-shadow: 0px 41px 96px rgba(89, 93, 129, 0.12), 0px 11.5672px 35.0416px rgba(89, 93, 129, 0.0791138), 0px 4.446px 17.012px rgba(89, 93, 129, 0.0603315), 0px 1.47211px 8.33962px rgba(89, 93, 129, 0.0448601), 0px 0.285217px 3.2975px rgba(89, 93, 129, 0.0272423);
-    
-//     transition: 500ms;
-//   }
-
-//   .embla__viewport.is-draggable {
-//     cursor: move;
-//     cursor: grab;
-//   }
-
-//   .embla__viewport.is-dragging {
-//     cursor: grabbing;
-//   }
-
-//   .embla__slide__div {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: ${props => props.selected ? 'flex-start' : 'center'};
-//     align-items: ${props => props.selected ? 'flex-start' : 'center'};
-
-//     p {
-//       font-weight: 400;
-//       font-size: ${props => props.selected ? '1rem' : '0.688rem'};
-//       color: ${colors.secondary};
-//       line-height: ${props => props.selected ? '1.2rem' : '0.813rem'};
-//       text-align: left;
-//     }
-//   }
-
-//   @media (max-width: 436px) {
-//     position: relative;
-//     padding-left: 0.625rem;
-//     min-width: 30rem;
-//     padding: 0 0 4rem 0;
-
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: flex-start;
-    
-//     .text-box {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: flex-start;
-//       align-items: flex-start;
-//       width: 83%;
-//       margin-left: 1.5rem;
-//     }
-
-//     img {
-//       width: 7.563rem;
-//       height: 7.563rem;
-//       border-radius: 50%;
-//     }
-
-//     .embla__slide__inner {
-//       position: relative;
-//       overflow: hidden;
-//       border-radius: 0.625rem;
-//       margin: 0;
-//       width: 30rem;
-//       height: 20rem;
-//       padding: 0;
-//       box-shadow: 0px 41px 96px rgba(89, 93, 129, 0.12), 0px 11.5672px 35.0416px rgba(89, 93, 129, 0.0791138), 0px 4.446px 17.012px rgba(89, 93, 129, 0.0603315), 0px 1.47211px 8.33962px rgba(89, 93, 129, 0.0448601), 0px 0.285217px 3.2975px rgba(89, 93, 129, 0.0272423);
-      
-//       transition: 500ms;
-//     }
-
-//     .embla__viewport.is-draggable {
-//       cursor: move;
-//       cursor: grab;
-//     }
-
-//     .embla__viewport.is-dragging {
-//       cursor: grabbing;
-//     }
-
-//     .embla__slide__div {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: flex-start;
-//       align-items: flex-start;
-
-//       p {
-//         font-weight: 400;
-//         font-size: 1rem;
-//         color: ${colors.secondary};
-//         line-height: 1.2rem;
-//         text-align: left;
-//       }
-//     }
-//   }
-// `;
-
 export const SliderDiv = styled.div`
-  /* .embla { */
-    position: relative;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  /* } */
+  position: relative;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   .embla__viewport {
     overflow: visible;
@@ -249,8 +61,11 @@ export const EmblaDiv = styled.div<EmblaDivProps>`
     /* width: auto; */
     /* min-height: 100%; */
     /* min-width: 100%; */
+    word-wrap: break-word;
+    text-overflow: ellipsis;
     width: ${props => props.selected ? '40.625rem' : '12.5rem'};
-    height: ${props => props.selected ? '20rem' : '14.25rem'};
+    max-height: ${props => props.selected ? 'none' : '14.25rem'};
+    min-height: ${props => props.selected ? '20rem' : '14.25rem'};
     box-shadow: 0px 41px 96px rgba(89, 93, 129, 0.12), 0px 11.5672px 35.0416px rgba(89, 93, 129, 0.0791138), 0px 4.446px 17.012px rgba(89, 93, 129, 0.0603315), 0px 1.47211px 8.33962px rgba(89, 93, 129, 0.0448601), 0px 0.285217px 3.2975px rgba(89, 93, 129, 0.0272423);
     /* max-width: none; */
     transform: translate(-50%, -50%);
@@ -265,6 +80,8 @@ export const EmblaDiv = styled.div<EmblaDivProps>`
 
     .text-box {
       width: 100%;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -291,6 +108,10 @@ export const EmblaDiv = styled.div<EmblaDivProps>`
 
     p {
       font-weight: 400;
+      overflow: hidden;
+      word-wrap: normal;
+      text-overflow: ellipsis;
+      max-height: ${props => props.selected ? 'initial' : '60%'};
       margin-top: ${props => props.selected ? '1rem' : '0.688rem'};
       font-size: ${props => props.selected ? '1rem' : '0.688rem'};
       color: ${colors.secondary};

@@ -80,12 +80,22 @@ export const VideoLayoutS = styled.div`
       align-items: center;
       justify-content: space-between;
       
-      img {
+      .icon-player {
         width: 1.5rem;
-        margin-right: 0.4rem;
+        margin-right: 0.6rem;
 
         cursor: pointer;
       }
+
+      /* .slider-player {
+        .elapsed {
+          font-size: 0.125rem !important;
+        }
+
+        .duration {
+          font-size: 0.125rem !important;
+        }
+      } */
     }
   }
 
