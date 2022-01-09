@@ -1,5 +1,5 @@
-import { DescriptionBox, DescriptionCenter, TitleBoxs, TitleTextYellow } from '../../assets/styles/texts';
-import { Bg, BoxThemesS, Container } from './styles';
+import { DescriptionCenter, TitleBoxs, TitleTextYellow } from '../../assets/styles/texts';
+import { BoxThemesS, Container } from './styles';
 
 interface BoxThemesProps {
   title: string,

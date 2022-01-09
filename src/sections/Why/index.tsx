@@ -1,7 +1,4 @@
-import { useState } from "react";
-import ReactPlayer from "react-player";
-import { DescriptionCenter, DescriptionLeft, TitlesSections, TitleTextBlue } from "../../assets/styles/texts";
-import { BoxThemes } from "../../components/BoxThemes";
+import { DescriptionLeft, TitlesSections } from "../../assets/styles/texts";
 import { Section } from "./styles";
 
 export function Why() {

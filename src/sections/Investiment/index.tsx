@@ -1,7 +1,5 @@
-import { useState } from "react";
-import ReactPlayer from "react-player";
-import { DescriptionCenter, DescriptionLeft, TitlesSections, TitleTextBlue } from "../../assets/styles/texts";
-import { BoxThemes } from "../../components/BoxThemes";
+
+import { TitlesSections } from "../../assets/styles/texts";
 import { InvestimentItem } from "../../components/InvestimentItem";
 import { Button } from "../Banner/styles";
 import { Section } from "./styles";

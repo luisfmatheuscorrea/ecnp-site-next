@@ -5,7 +5,6 @@ import { Button } from '../../sections/Banner/styles';
 import { Anchor, ContentBody, HeaderS } from './styles';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { useRef } from 'react';
-import { colors } from '../../assets/styles/global';
 
 export function Header() {
   const router = useRouter();

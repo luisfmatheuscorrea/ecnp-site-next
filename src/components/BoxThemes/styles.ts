@@ -43,16 +43,6 @@ export const BoxThemesS = styled.div<BoxThemesProps>`
     }
 `;
 
-export const Bg = styled.div`
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    mix-blend-mode: overlay;
-`
-
 export const Container = styled.div`
     position: relative;
     height: 24.125rem;

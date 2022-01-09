@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { ControllerButton, PaginationButton } from './styles';
 import { EmblaDiv, SliderDiv } from "./embla";
-import { colors } from "../../assets/styles/global";
-import { DescriptionDepoiment, DescriptionLeft, TitleDepoiment, TitleDepoiments, TitleTextYellow } from "../../assets/styles/texts";
+import { TitleDepoiments } from "../../assets/styles/texts";
 
 interface DepoimentCarouselProps {
   slides: DepoimentSlides[],
@@ -51,9 +48,6 @@ export function DepoimentCarousel({ slides }:DepoimentCarouselProps) {
   return(
     <>
       <SliderDiv className="embla">
-        {/* <ControllerButton onClick={scrollPrev} enabled={prevBtnEnabled}>
-          <FiChevronLeft className="icon" color={prevBtnEnabled ? colors.primaryYellow : colors.primaryGreyDark} />
-        </ControllerButton> */}
         <div className="embla__viewport" ref={viewportRef}>
           <div className="embla__container">
             {slides.map((slide, index) => (
@@ -74,18 +68,6 @@ export function DepoimentCarousel({ slides }:DepoimentCarouselProps) {
             ))}
           </div>
         </div>
-        {/* <ControllerButton onClick={scrollNext} enabled={nextBtnEnabled}>
-          <FiChevronRight className="icon" color={nextBtnEnabled ? colors.primaryYellow : colors.primaryGreyDark} />
-        </ControllerButton> */}
-        {/* <SliderDots>
-          {scrollSnaps.map((_, index) => (
-            <PaginationButton
-              key={index}
-              selected={index === selectedIndex}
-              onClick={() => scrollTo(index)}
-            />
-          ))}
-        </SliderDots> */}
       </SliderDiv>
     </>
   );

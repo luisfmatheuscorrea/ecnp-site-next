@@ -1,7 +1,5 @@
 import { Link } from "react-scroll";
-import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 import { DescriptionBanner, TitleBanner } from "../../assets/styles/texts";
-import { CountPagination } from "../../components/CountPagination";
 import { Button, Section } from "./styles";
 
 export function Banner() {

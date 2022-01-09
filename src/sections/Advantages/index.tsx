@@ -1,8 +1,5 @@
-import { useState } from "react";
-import ReactPlayer from "react-player";
-import { DescriptionCenter, TitlesSections, TitleTextBlue } from "../../assets/styles/texts";
+import { TitlesSections } from "../../assets/styles/texts";
 import { AdvantageItem } from "../../components/AdvantageItem";
-import { BoxThemes } from "../../components/BoxThemes";
 import { VideoLayout } from "../../components/VideoLayout";
 import { Section } from "./styles";
 
