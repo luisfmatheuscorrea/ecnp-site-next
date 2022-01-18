@@ -18,7 +18,7 @@ export function Investiment() {
             <InvestimentItem description="Suporte de um semestre letivo" />
             <InvestimentItem description="Acesso ilímitado" />
           </div>
-          <TitlesSections data-aos="zoom-out-right" data-aos-delay="200">Tudo isso por apenas<br/><strong>R$</strong><strong className="big">199</strong><strong>,95</strong> ou <strong className="big">5</strong><strong>x R$</strong><strong className="big">40</strong><strong>,00</strong></TitlesSections>
+          <TitlesSections data-aos="zoom-out-right" data-aos-delay="200">Tudo isso por apenas<br/><strong>R$</strong><strong className="big">200</strong><strong>,00</strong> ou <strong className="big">5</strong><strong>x R$</strong><strong className="big">40</strong><strong>,00</strong></TitlesSections>
           <Button data-aos="zoom-out-right" data-aos-delay="250" extended>Inscrever-se</Button>
         </div>
         <div className="box-image">
