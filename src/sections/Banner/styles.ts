@@ -3,6 +3,8 @@ import { colors } from "../../assets/styles/global";
 
 interface ButtonProps {
   extended?: boolean;
+  margin?: string;
+  color?: string;
 }
 
 export const Section = styled.section`
@@ -46,13 +48,14 @@ export const Section = styled.section`
 
 export const Button = styled.button<ButtonProps>`
     color: ${colors.white};
-    background-color: ${colors.primary};
+    background-color: ${props => props.color ?? colors.primary};
     font-size: 1.125rem;
     font-weight: 600;
     width: ${props => props.extended ? '100%' : 'fit-content'};
     padding: 0.5rem 2.2rem;
     border-radius: 1000px;
     transition: 400ms;
+    margin: ${props => props.margin ?? '0'};
 
     cursor: pointer;
 

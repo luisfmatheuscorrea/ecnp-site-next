@@ -16,6 +16,21 @@ export const Section = styled.section`
   align-items: center;
   justify-content: space-between;
 
+  .or-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: ${colors.secondary};
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+  }
+
   .box {
     width: 45%;
     display: flex;
