@@ -20,7 +20,8 @@ const theme = extendTheme({ shadows })
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     Aos.init({
-      offset: 250,
+      offset: 100,
+      once: true
     });
   }, []);
 
